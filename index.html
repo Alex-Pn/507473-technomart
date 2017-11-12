@@ -3,26 +3,32 @@
 	<head>
    	<meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
   <body>
   	<header class="main-header">
-  		<a href="#">
   			<p class="header-logo">Техномарт</p>
-  		</a>
   			<div class="header-tools">
-          <span class="site-search">Поиск</span>
-				  <span class="bookmarks">Закладки</span>  				  
+          <img src="img/icon-search.svg" height="17px" width="17px" alt="">
+            <span class="site-search">Поиск</span>
+				  <img src="img/icon-bookmark.svg" height="16px" width="14px" alt="">
+            <span class="bookmarks">Закладки</span>  				  
+          <img src="img/icon-cart.svg" height="15px" width="15px" alt="">
           <span class="cart">Корзина</span>
   			  <a href="#">Оформить заказ</a>
         </div>
   			<p class="header-description">Интернет-магазин строительных материалов
         и инструментов для ремонта</p>
    			<div class="header-contacts">
- 					<a href="tel:+78125550555">+7(812)555-05-55</a><br>
+ 					<img src="img/icon-phone.svg" height="19px" width="19px" alt="">
+            <a href="tel:+78125550555">+7(812)555-05-55</a><br>
  					<span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
  				</div>
       	<ul class="log-reg">
-					<li class="log-in"><a href="#">Войти</a></li>
+					<li class="log-in">
+            <img src="img/icon-login.svg" height="17px" width="20px" alt="">
+            <a href="#">Войти</a>
+          </li>
   				<li class="registration"><a href="#">Регистрация</a></li>
   			</ul>
       <nav class="navigation">
@@ -44,38 +50,38 @@
             <div class="services-materials">
                 <h3>Материалы</h3> 
                 <a href="#">
-                  <span>На любой вкус</span>
+                На любой вкус
                 </a>
-                <img src="bucket">
+                <img src="img/icon-1.svg" height="65px" width="44px">
                 <span class="services-new">new</span>
             </div>
             <div class="services-instrument">
                 <h3>Инструмент</h3>
                 <a href="#">
-                  <span>На все случаи</span>
+                На все случаи
                 </a>
-                <img src="drill">
+                <img src="img/icon-2.svg" height="61px" width="75px">
             </div>
             <div class="services-technic">
               <h3>Техника</h3>
               <a href="#">
-                <span>Для стройки</span>
+              Для стройки
               </a>
-                <img src="traсtor">
+                <img src="img/icon-3.svg" height="62px" width="78px">
             </div>
             <div class="services-sale">
               <h3>Скидки 50%</h3>
               <a href="#">
-                <span>На 350 товаров</span>
+              На 350 товаров
               </a>
-              <img src="cart">
+              <img src="img/icon-4.svg" height="72" width="59">
             </div>
             <div class="services-delivery">
               <h3>Доставка</h3>
-                <a href="#">
-                  <span>Бесплатно</span>
-                </a>
-                <img src="car">
+              <a href="#">
+              Бесплатно
+              </a>
+              <img src="img/icon-5.svg" height="63" width="78">
             </div>
             <div class="services-slider">Перфораторы<span>Настоящие мужские игрушки</span></div>
             <a href="#">Открыть каталог</a>
@@ -87,7 +93,7 @@
           </div>
           <div class="product">
             <a href="#">
-              <img src="bosch-9000">
+              <img src="img/bosch9000.png" height="170px" width="218px">
               <h3>Перфоратор BOSCH BFG 9000</h3>
               <span class="price-old">32500 Р.</span>
               <span class="price-new">25500 Р.</span>
@@ -95,7 +101,7 @@
           </div>
           <div class="product">
             <a href="#">
-              <img src="bosch-9000">
+              <img src="img/bosch3000.png" height="170px" width="218px">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <span class="price-old">22500 Р.</span>
               <span class="price-new">15500 Р.</span>
@@ -103,7 +109,7 @@
           </div>
           <div class="product">
             <a href="#">
-              <img src="bosch-9000">
+              <img src="img/bosch6000.png" height="170px" width="218px">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <span class="price-old">30500 Р.</span>
               <span class="price-new">25500 Р.</span>
@@ -111,7 +117,7 @@
           </div>
           <div class="product">
             <a href="#">
-              <img src="bosch-9000">
+              <img src="img/bosch3000.png" height="170px" width="218px">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <span class="price-new">12500 Р.</span>
               <span class="product-new">new</span>
@@ -124,14 +130,14 @@
             <a class="popular-makers-button" href="#">Все производители</a>
           </div>
             <ul class="popular-makers-list">
-              <li class="maker"><a href="#"><img src="#" width="150" height="100" alt="Bosch"></a></li>
-              <li class="maker"><a href="#"><img src="#" width="150" height="100" alt="Makita"></a></li>
-              <li class="maker"><a href="#"><img src="#" width="150" height="100" alt="DeWALT"></a></li>
-              <li class="maker"><a href="#"><img src="#" width="150" height="100" alt="Интерскол"></a></li>
-              <li class="maker"><a href="#"><img src="#" width="150" height="100" alt="Hitachi"></a></li>
-              <li class="maker"><a href="#"><img src="#" width="150" height="100" alt="LG"></a></li>
-              <li class="maker"><a href="#"><img src="#" width="150" height="100" alt="AEG"></a></li>
-              <li class="maker"><a href="#"><img src="#" width="150" height="100" alt="Metabo"></a></li>
+              <li class="maker"><a href="#"><img src="img/bosch.png" width="218" height="143" alt="Bosch"></a></li>
+              <li class="maker"><a href="#"><img src="img/makita.png" width="218" height="143" alt="Makita"></a></li>
+              <li class="maker"><a href="#"><img src="img/dewalt.png" width="218" height="143" alt="DeWALT"></a></li>
+              <li class="maker"><a href="#"><img src="img/interskol.png" width="218" height="143" alt="Интерскол"></a></li>
+              <li class="maker"><a href="#"><img src="img/hitachi.png" width="218" height="143" alt="Hitachi"></a></li>
+              <li class="maker"><a href="#"><img src="img/lg.png" width="218" height="143" alt="LG"></a></li>
+              <li class="maker"><a href="#"><img src="img/aeg.png" width="218" height="143" alt="AEG"></a></li>
+              <li class="maker"><a href="#"><img src="img/metabo.png" width="218" height="143" alt="Metabo"></a></li>
             </ul>
         </section>
         <section class="services">
@@ -170,7 +176,7 @@
           <div class="about-us-right">
             <h2 class="about-us-title">Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <span class="map"><img src="map"></span><br>
+            <span class="map"><img src="img/map.jpg" height="158" width="300"></span><br>
             <a href="#">Заблудились? Напишите нам!</a> 
         </article>
       </main>
@@ -196,9 +202,9 @@
         </ul>
         <p class="footer-copyright">&copy; 2010-2017 Компания &quot;Техномарт&quot;<br>Все права защищены</p>
         <ul class="footer-sozial">
-          <li><a href="#"><img src="vk" width="10" height="10"></a></li>
-          <li><a href="#"><img src="facebook" width="10" height="10"></a></li>
-          <li><a href="#"><img src="insta" width="10" height="10"></a></li>
+          <li><a href="#"><img src="img/icon-vk.svg" width="15px" height="26px"></a></li>
+          <li><a href="#"><img src="img/icon-fb.svg" width="22" height="12"></a></li>
+          <li><a href="#"><img src="img/icon-insta.svg" width="21px" height="21px"></a></li>
         </ul>
         <span class="feedback">Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
         <span class="footer-site-makers">Разработано - <a href="htmlacademy.ru">htmlacademy.ru</a></span>
