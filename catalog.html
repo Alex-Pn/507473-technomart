@@ -9,10 +9,10 @@
     <header class="main-header">
         <p class="header-logo">Техномарт</p>
         <div class="header-tools">
-          <span class="site-search">Поиск</span>
-          <span class="bookmarks">Закладки</span>           
-          <span class="cart">Корзина</span>
-          <a href="#">Оформить заказ</a>
+          <input type="search" name="search" placeholder="Поиск:">
+          <button class="bookmarks">Закладки</button>           
+          <button class="cart">Корзина</button>
+          <a href="#" class="order">Оформить заказ</a>
         </div>
         <p class="header-description">Интернет-магазин строительных материалов
         и инструментов для ремонта</p>
@@ -46,19 +46,61 @@
         <li class="bread-crumbs-item"><span class="active">Перфораторы</span></li>
       </ul>
       <h1 class="catalog-title">Перфораторы</h1>
-      <span>Фильтр</span>
-      <span>Цена</span>
-      <span>Производители</span>
-      <span>Питание</span>
-      <span>Показать</span>
+      <div class="filter">
+        <h2 class="filter-title">Фильтр</h2>
+        <div class="filter-price">
+          <label for="range-price">Цена</label>
+          <input type="range" name="price" id="range-price" multiple>  
+          <output name="price-low" for="range-price">0</output>
+          <output name="prise-high" for="range-price">30000</output>
+        </div>
+        <div class="makers">
+          <h2 class="makers-title">Производители</h2>
+          <ul class="makers-list">
+            <li class="makers-name">
+              <input type="checkbox" name="bosch" id="bosch-checkbox">
+              <label for="bosch-checkbox">BOSCH</label>
+            </li>
+            <li class="makers-name">
+              <input type="checkbox" name="interskol" id="interskol-checkbox">
+              <label for="interskol-checkbox">ИНТЕРСКОЛ</label>
+            </li>
+            <li class="makers-name">
+              <input type="checkbox" name="makita" id="makita-checkbox">
+              <label for="makita-checkbox">MAKITA</label>
+            </li>
+            <li class="makers-name">
+              <input type="checkbox" name="dewalt" id="dewalt-checkbox">
+              <label for="dewalt-checkbox">DEWALT</label>
+            </li>
+            <li class="makers-name">
+              <input type="checkbox" name="hitachi" id="hitachi-checkbox">
+              <label for="hitachi-checkbox">HITACHI</label>
+            </li>
+          </ul> 
+        </div>
+        <div class="power">Питание
+          <ul class="power-list">
+            <li class="power-type">
+              <input type="radio" name="power" value="akku" id="akku-radio">
+              <label for="akku-radio">АККУМУЛЯТОРНЫЕ</label>
+            </li>
+            <li class="power-type">
+              <input type="radio" name="power" value="net" id="net-radio">
+              <label for="net-radio">СЕТЕВЫЕ</label>
+            </li>  
+          </ul>
+        </div>
+        <button class="show-filter">Показать</button>
+      </div>
       <div class="sorting">
         <h2 class="sorting-title">Сортировка:</h2>
         <ul class="sorting-item-list">
           <li class="sorting-item"><a href="#">По цене</a></li>
           <li class="sorting-item"><a href="#">По типу</a></li>
           <li class="sorting-item"><a href="#">По функционалу</a></li>
-          <li><span><img src="img/icon-up-dir.svg" height="10px" width="11px"></span></li>
-          <li><span><img src="img/icon-down-dir.svg" height="10px" width="11px"></span></li>
+          <li><button class="sorting-up-button"><img src="img/icon-up-dir.svg" height="10px" width="11px"></button></li>
+          <li><button class="sorting-down-button"><img src="img/icon-down-dir.svg" height="10px" width="11px"></button></li>
         </ul>
       </div>
        <section class="products">
@@ -71,10 +113,10 @@
             </a>
             <div class="cursor-contact">
               <a href="#">
-                <span>Купить</span>
+                <button class="buy-button">Купить</button>
               </a>
               <a href="#">
-                <span>В закладки</span>
+                <button class="to-bookmarks-button">В закладки</button>
               </a>
             </div>
           </div>
@@ -87,10 +129,10 @@
             </a>
             <div class="cursor-contact">
               <a href="#">
-                <span>Купить</span>
+                <button class="buy-button">Купить</button>
               </a>
               <a href="#">
-                <span>В закладки</span>
+                <button class="to-bookmarks-button">В закладки</button>
               </a>
             </div>
           </div>
@@ -103,10 +145,10 @@
             </a>
             <div class="cursor-contact">
               <a href="#">
-                <span>Купить</span>
+                <button class="buy-button">Купить</button>
               </a>
               <a href="#">
-                <span>В закладки</span>
+                <button class="to-bookmarks-button">В закладки</button>
               </a>
             </div>
           </div>
@@ -119,10 +161,10 @@
             </a>
             <div class="cursor-contact">
               <a href="#">
-                <span>Купить</span>
+                <button class="buy-button">Купить</button>
               </a>
               <a href="#">
-                <span>В закладки</span>
+                <button class="to-bookmarks-button">В закладки</button>
               </a>
             </div>
           </div>
@@ -136,10 +178,10 @@
             </a>
             <div class="cursor-contact">
               <a href="#">
-                <span>Купить</span>
+                <button class="buy-button">Купить</button>
               </a>
               <a href="#">
-                <span>В закладки</span>
+                <button class="to-bookmarks-button">В закладки</button>
               </a>
             </div>
           </div>
@@ -151,10 +193,10 @@
             </a>
             <div class="cursor-contact">
               <a href="#">
-                <span>Купить</span>
+                <button class="buy-button">Купить</button>
               </a>
               <a href="#">
-                <span>В закладки</span>
+                <button class="to-bookmarks-button">В закладки</button>
               </a>
             </div>
           </div>
@@ -168,10 +210,10 @@
             </a>
             <div class="cursor-contact">
               <a href="#">
-                <span>Купить</span>
+                <button class="buy-button">Купить</button>
               </a>
               <a href="#">
-                <span>В закладки</span>
+                <button class="to-bookmarks-button">В закладки</button>
               </a>
             </div>
           </div>
@@ -184,10 +226,10 @@
             </a>
             <div class="cursor-contact">
               <a href="#">
-                <span>Купить</span>
+                <button class="buy-button">Купить</button>
               </a>
               <a href="#">
-                <span>В закладки</span>
+                <button class="to-bookmarks-button">В закладки</button>
               </a>
             </div>
           </div>
@@ -199,18 +241,28 @@
             </a>
             <div class="cursor-contact">
               <a href="#">
-                <span>Купить</span>
+                <button class="buy-button">Купить</button>
               </a>
               <a href="#">
-                <span>В закладки</span>
+                <button class="to-bookmarks-button">В закладки</button>
               </a>
             </div>
           </div>
           <div class="pagenator">
             <ul class="pagenator-list">
-              <li class="pagenator-number"><span class="active">1</span></li>
-              <li class="pagenator-number"><a href="#">2</a></li>
-              <li class="pagenator-next"><a href="#">Следующая</a></li>
+              <li class="pagenator-number">
+                <button class="active">1</button>
+              </li>
+              <li class="pagenator-number">
+                <a href="#">
+                  <button class="2-page-button">2</button>
+                </a>
+              </li>
+              <li class="pagenator-next">
+                <a href="#">
+                  <button class="next-page-button">Следующая</button>
+                </a>
+              </li>
             </ul>  
           </div>
         </section>
