@@ -1,5 +1,7 @@
 /* основа */
 body {
+	min-width: 1200px;
+	min-height: 3151px;
 	padding: 0;
 	margin: 0;
 	background-color: #ffffff;
@@ -688,4 +690,226 @@ header .order:active {
 }
 
 
+/*flex*/ 
+/*header-top*/
+.main-header {
+	display: flex;
+	flex-direction: column;
+}
 
+.header-tools {
+	min-height: 42px;
+	display: flex;
+}
+
+.header-logo {
+	margin-left: 130px;
+	width: 220px;
+}
+
+#search {
+	min-width: 270px;
+}
+
+.bookmarks,
+.cart,
+.order {
+	min-width: 150px;
+}
+/*header-center*/
+.header-center {
+	display: flex;
+	justify-content: space-between;
+	min-height: 158px;
+}
+
+.header-description {
+	padding-left: 55px;
+	margin-left: 130px;
+	width: 300px;
+	align-self: center;
+}
+
+.header-contacts {
+	width: 270px;
+	align-self: center;
+}
+
+.header-contacts,
+.log-reg {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header-tel {
+	width: 270px;
+}
+
+.log-reg {
+	width: 300px;
+	align-self: center;
+	margin-right: 130px;
+}
+
+.log-in {
+	width: 130px;
+}
+
+.registration {
+	width: 150px;
+
+}
+
+/*header-bottom*/ 
+.navigation {
+	margin-left: 130px;
+	margin-right: 130px;
+	min-width: 970px;
+}
+
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	min-height: 55px;
+}
+
+.header-menu li {
+	align-self: center;
+}
+
+/*main-services*/   
+
+.main-services {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 130px;
+	margin-right: 130px;
+	justify-content: center;
+}
+
+.services-materials,
+.services-instrument,
+.services-technic,
+.services-sale,
+.services-delivery {
+	width: 300px;
+	height: 123px;
+	margin-bottom: 20px;
+}
+
+.services-slider {   
+	width: 620px;
+	height: 266px;
+	background-color: black;
+	margin-right: 20px;
+}
+
+.services-materials,
+.services-instrument {
+	margin-right: 20px;
+}
+
+/*popular-products*/
+
+.popular-products {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 130px;
+	margin-right: 130px;
+	justify-content: center;
+	min-height: 427px;
+}
+
+.popular-products-header {
+	min-width: 940px;
+	height: 90px;
+}
+
+.product {
+	width:220px;
+	height:318px;
+}
+
+.product:not(:last-child) {
+	margin-right: 20px;
+}
+
+/*popular-makers*/
+
+.popular-makers {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 130px;
+	margin-right: 130px;
+	justify-content: center;
+	min-height: 420px;
+}
+
+.popular-makers-header {
+	min-width: 940px;
+	height: 90px;
+}
+
+.popular-makers-list{
+	margin-right: 20px;
+}
+
+.popular-makers-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.maker {
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+/*services*/
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 130px;
+	margin-right: 130px;
+}
+
+/*about-us*/
+
+.about-us {
+	display: flex;
+	margin-left: 130px;
+	justify-content: space-between;
+}
+
+.about-us-left {
+	display: flex;
+	flex-wrap: wrap;
+	width: 550px;
+}
+
+.about-us-right {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-us-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.main-footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-footer-top,
+.main-footer-bottom {
+	display: flex;
+}
+
+.footer-logo-link,
+.footer-copyright {
+	margin-left: 130px;
+}
