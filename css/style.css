@@ -459,13 +459,15 @@ header .order:active {
 
 
 /* Каталог */
-.bread-crumbs-item a{
+.bread-crumbs-item a,
+.bread-crumbs-item span{
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
 	color: #000000;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 	
 .catalog-title {
@@ -690,7 +692,7 @@ header .order:active {
 }
 
 
-/*flex*/ 
+/*!!FLEX!!*/ 
 /*header-top*/
 .main-header {
 	display: flex;
@@ -902,6 +904,7 @@ header .order:active {
 .main-footer {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .main-footer-top,
@@ -912,4 +915,119 @@ header .order:active {
 .footer-logo-link,
 .footer-copyright {
 	margin-left: 130px;
+}
+
+.footer-menu-top {
+	display: flex;
+}
+
+.footer-menu-bottom {
+	display: flex;
+}
+
+.footer-sozial {
+	display: flex;
+}
+
+.footer-link {
+	margin-right: 20px;
+}
+
+.footer-menus {
+	align-self: center;
+}
+
+
+/*catalog-flex*/
+
+/*top*/
+.bread-crumbs {
+	display: flex;
+	margin-left: 130px;
+	min-height: 60px;
+}
+
+.bread-crumbs-item {
+	margin-right: 20px;
+	align-self: center;
+}
+
+.catalog-title {
+	height: 55px;
+	min-width: 940px;
+	display: flex;
+	margin-left: 130px;
+	margin-right: 130px;
+	padding-left: 20px;
+	padding-top: 35px;
+	text-align: center;
+}
+/*main*/
+
+/*filter*/
+.catalog-main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main-info-catalog {
+	display: flex;
+	flex-direction: column;
+}
+
+.filter {
+	display: flex;
+	flex-direction: column;
+}
+
+.filter-title {
+	height: 38px;
+	width: 220px;
+	display: flex;
+	margin-left: 130px;
+	padding-left: 20px;
+}
+
+.filter-form {
+	width: 220px;
+	margin-left: 130px;
+}
+
+.sorting {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 130px;
+	margin-right: 130px;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 130px;
+	margin-right: 130px;
+	justify-content: center;
+}
+
+.sorting-item-list {
+	display: flex;
+	align-self: center;
+}
+
+.pagenator-list {
+	display: flex;
+}
+
+.about-perforators-block {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-perforators-title {
+	margin-left: 130px;
+	margin-right: auto;
+}
+
+.about-perforators-text {
+	margin-left: 130px;
+	margin-right: 130px;
 }
