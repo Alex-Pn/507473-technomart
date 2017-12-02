@@ -1066,6 +1066,12 @@ header .order:active {
 /*catalog-flex*/
 
 /*top*/
+.bread-crumbs-block {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
 .bread-crumbs-container {
 	display: flex;
 	justify-content: space-between;
@@ -1085,7 +1091,6 @@ header .order:active {
 }
 
 /*main*/
-
 .catalog-main-container {
 	display: flex;
 	justify-content: center;
@@ -1093,6 +1098,19 @@ header .order:active {
 }
 
 /*filter*/
+
+.catalog-main-block {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.hammerdrills-header-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
 
 .hammerdrills-header {
 	display: flex;
