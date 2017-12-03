@@ -9,19 +9,21 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header-container">
-        <div class="header-tools">
-          <a href="index.html" class="header-logo">Техномарт</a>
-          <label for="search">Поиск:</label>
-          <input type="search" name="search" id="search">
-          <button class="bookmarks">Закладки: 0</button>            
-          <button class="cart">Корзина: 0</button>
-          <a href="#" class="order">Оформить заказ</a>
+      <div class="header-top">
+        <div class="container">
+          <div class="header-tools">
+            <a href="index.html" class="header-logo">Техномарт</a>
+            <label for="search">Поиск:</label>
+            <input type="search" name="search" id="search">
+            <button class="bookmarks">Закладки: 0</button>            
+            <button class="cart">Корзина: 0</button>
+            <a href="#" class="order">Оформить заказ</a>
+          </div>
         </div>
       </div>
       <div class="header-main">
-        <div class="header-center-container">
-          <div class="header-center">
+        <div class="header-center">
+          <div class="container">
             <p class="header-description">Интернет-магазин строительных материалов
             и инструментов для ремонта</p>
             <div class="header-contacts">
@@ -38,8 +40,8 @@
             </ul>
           </div>
         </div>
-        <div class="navigation-container">
-          <nav class="navigation">
+        <nav class="navigation">
+          <div class="container">
             <ul class="header-menu">
               <li><a href="index.html">Главная</a></li>
               <li><a href="#">Компания</a></li>
@@ -49,13 +51,13 @@
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
     </header>
     <main class="catalog-main">
         <div class="bread-crumbs-block">
-          <div class="bread-crumbs-container">
+          <div class="container">
             <ul class="bread-crumbs">
               <li class="bread-crumbs-item"><a href="index.html"><img src="img/icon-home.svg" height="12px" width="14px"></a></li>
               <li class="bread-crumbs-item"><a href="#">Каталог</a></li>
@@ -64,66 +66,66 @@
             </ul>
           </div>
         </div>
-        <div class="hammerdrills-header-container">
-          <div class="hammerdrills-header"> 
+        <div class="hammerdrills-header"> 
+          <div class="container">
             <h1 class="catalog-title">Перфораторы</h1>
           </div>
         </div>
         <div class="catalog-main-block">
-          <div class="main-info-catalog"> 
-            <div class="filter">
-              <div class="filter-header"> 
-                <h2 class="filter-title">Фильтр:</h2>
-              </div> 
-              <form class="filter-form" method="post" action="#">
-                <div class="filter-price">
-                  <label for="range-price">Цена:</label>
-                  <input type="range" name="price" id="range-price" multiple>  
-                  <output name="price-low" for="range-price">0</output>
-                  <output name="prise-high" for="range-price">30000</output>
-                </div>
-                <div class="makers">
-                  <h2 class="makers-title">Производители:</h2>
-                  <ul class="makers-list">
-                    <li class="makers-name">
-                      <input type="checkbox" name="maker" id="bosch-checkbox" value="bosch" checked>
-                      <label for="bosch-checkbox">BOSCH</label>
-                    </li>
-                    <li class="makers-name">
-                      <input type="checkbox" name="maker" id="interskol-checkbox" value="interskol">
-                      <label for="interskol-checkbox">ИНТЕРСКОЛ</label>
-                    </li>
-                    <li class="makers-name">
-                      <input type="checkbox" name="maker" id="makita-checkbox" value="makita" checked>
-                      <label for="makita-checkbox">MAKITA</label>
-                    </li>
-                    <li class="makers-name">
-                      <input type="checkbox" name="maker" id="dewalt-checkbox" value="dewalt">
-                      <label for="dewalt-checkbox">DEWALT</label>
-                    </li>
-                    <li class="makers-name">
-                      <input type="checkbox" name="maker" id="hitachi-checkbox" value="hitachi">
-                      <label for="hitachi-checkbox">HITACHI</label>
-                    </li>
-                  </ul> 
-                </div>
-                <div class="power">
-                  <h2 class="power-title">Питание:</h2>
-                  <ul class="power-list">
-                    <li class="power-type">
-                      <input type="radio" name="power" value="akku" id="akku-radio" checked>
-                      <label for="akku-radio">АККУМУЛЯТОРНЫЕ</label>
-                    </li>
-                    <li class="power-type">
-                      <input type="radio" name="power" value="net" id="net-radio">
-                      <label for="net-radio">СЕТЕВЫЕ</label>
-                    </li>  
-                  </ul>
-                </div>
-                <button type="submit" class="show-filter">Показать</button>
-              </form>
-            </div>
-              <div class="catalog-main-right-container">
+          <div class="container">
+              <div class="filter">
+                <div class="filter-header"> 
+                  <h2 class="filter-title">Фильтр:</h2>
+                </div> 
+                <form class="filter-form" method="post" action="#">
+                  <div class="filter-price">
+                    <label for="range-price">Цена:</label>
+                    <input type="range" name="price" id="range-price" multiple>  
+                    <output name="price-low" for="range-price">0</output>
+                    <output name="prise-high" for="range-price">30000</output>
+                  </div>
+                  <div class="makers">
+                    <h2 class="makers-title">Производители:</h2>
+                    <ul class="makers-list">
+                      <li class="makers-name">
+                        <input type="checkbox" name="maker" id="bosch-checkbox" value="bosch" checked>
+                        <label for="bosch-checkbox">BOSCH</label>
+                      </li>
+                      <li class="makers-name">
+                        <input type="checkbox" name="maker" id="interskol-checkbox" value="interskol">
+                        <label for="interskol-checkbox">ИНТЕРСКОЛ</label>
+                      </li>
+                      <li class="makers-name">
+                        <input type="checkbox" name="maker" id="makita-checkbox" value="makita" checked>
+                        <label for="makita-checkbox">MAKITA</label>
+                      </li>
+                      <li class="makers-name">
+                        <input type="checkbox" name="maker" id="dewalt-checkbox" value="dewalt">
+                        <label for="dewalt-checkbox">DEWALT</label>
+                      </li>
+                      <li class="makers-name">
+                        <input type="checkbox" name="maker" id="hitachi-checkbox" value="hitachi">
+                        <label for="hitachi-checkbox">HITACHI</label>
+                      </li>
+                    </ul> 
+                  </div>
+                  <div class="power">
+                    <h2 class="power-title">Питание:</h2>
+                    <ul class="power-list">
+                      <li class="power-type">
+                        <input type="radio" name="power" value="akku" id="akku-radio" checked>
+                        <label for="akku-radio">АККУМУЛЯТОРНЫЕ</label>
+                      </li>
+                      <li class="power-type">
+                        <input type="radio" name="power" value="net" id="net-radio">
+                        <label for="net-radio">СЕТЕВЫЕ</label>
+                      </li>  
+                    </ul>
+                  </div>
+                  <button type="submit" class="show-filter">Показать</button>
+                </form>
+              </div>
+              <div class="sorting-product">
                 <div class="sorting">
                   <h2 class="sorting-title">Сортировка:</h2>
                   <ul class="sorting-item-list">
@@ -296,23 +298,19 @@
                       </ul>  
                     </div>
                 </section>
-              </div>
           </div>
         </div>
         <article class="about-perforators">
-          <div class="about-perforators-container">
-            <div class="about-perforators-block">
-              <h2 class="about-perforators-title">Пара слов о перфораторах</h2> 
-              <p class="about-perforators-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-              Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-             </div>
+          <div class="container">
+            <h2 class="about-perforators-title">Пара слов о перфораторах</h2> 
+            <p class="about-perforators-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
           </div>
-        </article>
-      
+        </article>    
     </main>
-    <footer class="main-footer">
-        <div class="footer-container-top">
-          <div class="main-footer-top">
+      <footer class="main-footer">
+        <div class="main-footer-top">
+          <div class="container">
             <div class="footer-logo-menu">  
               <a href="#" class="footer-logo-link">
                 <p class="footer-logo">Техномарт</p>
@@ -338,8 +336,8 @@
             </div>
           </div>
         </div>
-        <div class="footer-container-bottom">
-          <div class="main-footer-bottom">
+        <div class="main-footer-bottom">
+          <div class="container">
             <p class="footer-copyright">&copy; 2010-2017 Компания &quot;Техномарт&quot;<br>Все права защищены</p>
             <ul class="footer-sozial">
               <li><a href="#" aria-label="Вконтакте"><img src="img/icon-vk.svg" width="15px" height="26px"></a></li>

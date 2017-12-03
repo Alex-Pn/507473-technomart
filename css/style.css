@@ -20,18 +20,7 @@ ul {
 }
 
 .visually-hidden {
-	position: absolute; 
-  	overflow: hidden; 
-  	clip: rect(0 0 0 0); 
-  	height: 1px; 
-  	width: 1px; 
-  	margin: -1px; 
-  	padding: 0; 
-  	border: 0; 
-}
-
-.main-header-container {
-	background-color: #29354a;
+	display: none;
 }
 
 .header-tools {
@@ -121,10 +110,6 @@ ul {
 	color: #000000;
 	border: 0;
 	text-decoration: none;
-}
-
-nav {
-	background-color: #32425c;
 }
 
 .navigation a {
@@ -278,7 +263,7 @@ nav {
 	color: #000000;
 }
 
-.delivery-description {
+.tab-description {
 	width: 300px;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
@@ -287,7 +272,7 @@ nav {
 	color: #000000;
 }
 
-.delivery-title {
+.tab-title {
 	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 36px;
 	line-height: 24px;
@@ -730,20 +715,28 @@ header .order:active {
 
 
 /*!!FLEX!!*/ 
-.main-header {
-	display: flex;
-	flex-direction: column;
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 
-.main-header-container {
+.header-top {
 	display: flex;
 	justify-content: center;
+	background-color: #29354a;
+}
+
+.header-top .container {
+	display: flex;
+	justify-content: space-between;
 	background-color: #29354a;
 }
 
 .header-tools {
 	min-height: 42px;
 	display: flex;
+	justify-content: space-between;
 }
 
 .header-logo {
@@ -763,22 +756,14 @@ header .order:active {
 	width: 150px;
 }
 /*header-center*/
-.header-main {
-	display: flex;
-	flex-direction: column;
-}
-
 .header-center {
 	display: flex;
-	justify-content: space-between;
-	height: 158px;
-	width: 890px;
-	padding-left: 50px;
+	justify-content: center;
 }
 
-.header-center-container {
+.header-center .container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .header-description {
@@ -814,9 +799,14 @@ header .order:active {
 }
 
 /*header-bottom*/ 
-.navigation-container {
+.navigation {
 	display: flex;
 	justify-content: center;
+}
+
+.navigation .container {
+	display: flex;
+	justify-content: space-between;
 }
 
 .header-menu {
@@ -824,7 +814,8 @@ header .order:active {
 	height: 15px;
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 30px;
+	padding: 20px 30px;	
+	background-color: #32425c;
 }
 
 .header-menu a{
@@ -841,14 +832,13 @@ header .order:active {
 	justify-content: center;
 }
 
-.main-services-container {
-	width: 940px;
+.main-services .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.main-services-container div:not(:last-child) {
+.main-services .container div:not(:last-child) {
 	margin-bottom: 20px;
 }
 
@@ -881,10 +871,9 @@ header .order:active {
 	margin-bottom: 20px;
 }
 
-.popular-products-container {
+.popular-products .container {
 	display: flex;
 	flex-wrap: wrap;
-	width: 940px;
 	justify-content: space-between;
 }
 
@@ -910,10 +899,9 @@ header .order:active {
 	margin-bottom: 85px;
 }
 
-.popular-makers-container {
+.popular-makers .container {
 	display: flex;
 	flex-wrap: wrap;
-	width: 940px;
 	justify-content: space-between;
 }
 
@@ -939,11 +927,10 @@ header .order:active {
 	justify-content: center;
 }
 
-.services-container {
+.services .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 940px;
 	height: 522px;
 }
 
@@ -964,12 +951,11 @@ header .order:active {
 	justify-content: center;
 }
 
-.about-us-container {
+.about-us .container {
 	display: flex;
 	justify-content: space-between;
-	width: 940px;
-	padding-top: 80px;
-	padding-bottom: 85px;
+	margin-top: 80px;
+	margin-bottom: 85px;
 }
 
 .about-us-left {
@@ -1001,26 +987,25 @@ header .order:active {
 	flex-direction: column;
 }
 
-.footer-container-top {
+.main-footer-top .container {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #32425c;
-	justify-content: center;
+	justify-content: space-between;
 }
 
-.footer-container-bottom {
+.main-footer-bottom .container {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #293449;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .main-footer-top {
-	height: 193px;
-	width: 940px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
+	background-color: #32425c;
 }
 
 .footer-logo-menu {
@@ -1048,10 +1033,8 @@ header .order:active {
 }
 
 .main-footer-bottom {
-	width: 940px;
-	height: 107px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
@@ -1072,11 +1055,9 @@ header .order:active {
 	flex-wrap: wrap;
 }
 
-.bread-crumbs-container {
+.bread-crumbs .container {
 	display: flex;
 	justify-content: space-between;
-	width: 940px;
-
 }
 
 .bread-crumbs {
@@ -1091,47 +1072,46 @@ header .order:active {
 }
 
 /*main*/
-.catalog-main-container {
+.sorting {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sorting .container {
+	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
 /*filter*/
 
-.catalog-main-block {
+.catalog-main-block .container {
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-
+	justify-content: space-between;
 }
 
-.hammerdrills-header-container {
+.hammerdrills-header .container {
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap;	
+	background-color: #f2f6f8;
+	padding: 0;
 }
 
 .hammerdrills-header {
 	display: flex;
-	justify-content: space-between;
-	background-color: #f2f6f8;
-	width: 940px;
+	justify-content: center;
 }
 
 .main-info-catalog {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 940px;
+	justify-content: center;
 	margin-top: 20px;
 }
 
 .filter {
 	height: 746px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
 
 .filter-header {
@@ -1141,9 +1121,6 @@ header .order:active {
 }
 
 .filter-form {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	width: 220px;	
 	height: 700px;
 }
@@ -1152,7 +1129,14 @@ header .order:active {
 	display: flex;
 	justify-content: space-between;
 	width: 700px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.sorting-product {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .products {
@@ -1185,17 +1169,10 @@ header .order:active {
 
 .about-perforators {
 	background-color: #f2f6f8;
+}
+
+.about-perforators .container {
 	display: flex;
 	justify-content: center;
-}
-
-.about-perforators-block {
-	display: flex;
 	flex-direction: column;
-}
-
-.about-perforators-container {
-	width: 940px;
-	display: flex;
-	justify-content: space-between;
 }
