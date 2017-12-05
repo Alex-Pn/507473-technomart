@@ -19,8 +19,28 @@ ul {
 	margin: 0;
 }
 
-.visually-hidden {
-	display: none;
+img {
+	max-width: 100%
+	height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 }
 
 .header-tools {
@@ -63,6 +83,7 @@ ul {
 	background-color: #ee3643;
 	text-decoration: none;
 	text-transform: uppercase;
+	box-shadow: 0px 5px #b52933;
 }
 
 .header-main {
@@ -80,25 +101,15 @@ ul {
 	color: #ee3643;
 }
 
-.header-contacts a {
-	background-color: #f3f7f8;
-	font-family: 'Cuprum', Arial, sans-serif;
-	font-size: 21px;
-	line-height: 18px;
-    font-weight: 700;
-	color: #ee3643;
-	border: 2px solid #ffffff;
-	text-decoration: none;
-}
-
 .header-adress {
 	width: 270px;
 	background-color: #f3f7f8;
 	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
 	color: #32425c;
+	margin-top: 8px;
 }
 
 .log-reg a {
@@ -106,7 +117,7 @@ ul {
 	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 21px;
 	line-height: 18px;
-    font-weight: 700;
+    font-weight: 400;
 	color: #000000;
 	border: 0;
 	text-decoration: none;
@@ -391,10 +402,12 @@ ul {
 
 .header-logo:hover {
 	background-color: #ca2c37;
+	box-shadow: 0px 5px #9a212a;
 }
 
 .header-logo:active {
 	background-color: #ba2732;
+	box-shadow: 0px 5px #8e1e26;
 }
 
 .bookmarks:hover,
@@ -415,7 +428,12 @@ header .order:active {
 	background-color: #518534;
 }
 
-#search:focus {
+.input-search:hover {
+	color: #000000;
+	background-color: #212a3a;
+}
+
+.input-search:focus {
 	color: #000000;
 	background-color: #ffffff;
 }
@@ -435,6 +453,7 @@ header .order:active {
 .header-menu a:active {
 	background-color: #1d2739;
 	color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 5px #1d2739;
 }
 
 .main-services-extra:hover {
@@ -746,62 +765,106 @@ header .order:active {
 	padding: 10px 0;
 }
 
-#search {
+.input-search {
 	width: 270px;
+	padding-left: 50px;
+}
+
+::-webkit-input-placeholder { color: white; }
+
+.bookmarks,
+.cart {
+	width: 150px;
 }
 
 .bookmarks,
-.cart,
-.order {
-	width: 150px;
+.cart {
+	padding-left: 44px; 
+	position: relative;
+	padding-right: 27px;
 }
+
+.order {
+	padding: 12px 0px;
+	padding-left: 20px;
+	padding-right: 22px;
+	vertical-align: middle;
+}
+
 /*header-center*/
 .header-center {
 	display: flex;
-	justify-content: center;
+	justify-content: center;	
+	margin-bottom: 24px;
 }
 
 .header-center .container {
 	display: flex;
 	justify-content: space-between;
+
 }
 
 .header-description {
-	width: 300px;
-	align-self: center;
+	width: 197px;
+	margin-left: 52px;
+	margin-top: 50px;
 }
 
 .header-contacts {
+	display: flex;
+	flex-direction: column;
 	width: 270px;
-	align-self: center;
+	height: auto;
+	margin-top: 46px;
 }
 
 .header-tel {
-	width: 270px;
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 21px;
+	line-height: 18px;
+    font-weight: 400;
+	color: #ee3643;
+    padding: 10.5px 0px;
+	padding-left: 70px;
+	padding-right: 42px;
+	border: 3px solid #ffffff;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.header-adress {
+	text-align: center;
+	margin-top: 0px;
 }
 
 .log-reg {
 	display: flex;
 	justify-content: space-between;
-	width: 300px;
-	align-self: center;
+	width: 281px;
+	margin-top: 46px;
 }
 
-.log-in {
-	width: 130px;
-	height: 45px;
+.log-in a {
+	display: block;
+	padding: 12px 0px;
+	padding-left: 47px;
+	padding-right: 26px;
 }
 
-.registration {
-	width: 150px;
-	height: 45px;
-
+.registration a{
+	display: block;
+	padding: 12px 24px;
 }
 
 /*header-bottom*/ 
 .navigation {
 	display: flex;
 	justify-content: center;
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 17px;
+	line-height: 17px;
+    font-weight: 400;
+	color: #ffffff;
 }
 
 .navigation .container {
@@ -810,18 +873,20 @@ header .order:active {
 }
 
 .header-menu {
-	width: 880px;
-	height: 15px;
+	width: 940px;
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 30px;	
 	background-color: #32425c;
+	box-shadow: 0px 5px #293449;
+	padding-left: 21px;
+	padding-right: 24px;
 }
 
 .header-menu a{
+	display: block;
 	align-self: center;
-	min-width: 100px;
-
+	padding: 19px 30px;
+	vertical-align: middle;
 }
 
 /*main-services*/   
@@ -830,6 +895,7 @@ header .order:active {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-top: 59px;
 }
 
 .main-services .container {
