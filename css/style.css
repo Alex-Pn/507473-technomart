@@ -247,7 +247,7 @@ input[type="radio"].visually-hidden {
 	color: #32425c;
 	text-transform: uppercase;
 	margin-top: 30px;
-	margin-left: 28px;
+	margin-left: 26px;
 }
 
 .popular-makers-button {
@@ -915,6 +915,12 @@ header .order:active {
 	position: relative;
 }
 
+.header-tools .active-cart {
+	padding-left: 50px; 
+	position: relative;
+	padding-right: 25px;
+}
+
 .bookmarks::before {
   content: "";
   position: absolute;
@@ -1014,6 +1020,10 @@ header .order:active {
 	flex-direction: column;
 	width: 270px;
 	margin-top: 46px;
+}
+
+.header-center .header-contacts-catalog {
+	margin-left: 20px;
 }
 
 .header-tel {
@@ -1263,7 +1273,7 @@ header .order:active {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-bottom: 85px;
+	margin-bottom: 65px;
 }
 
 .popular-makers .container {
@@ -1276,7 +1286,7 @@ header .order:active {
 	display: flex;
 	justify-content: space-between;
 	min-width: 940px;
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 }
 
 
@@ -1478,8 +1488,8 @@ header .order:active {
   	position: absolute;
   	width: 20px;
   	height: 18px;
-	top: 15px;
-	left: 15px;
+	top: 13px;
+	left: 13px;
 	background-image: url(../img/icon-user.svg);
   	background-repeat: no-repeat;
   	background-color: #ffffff;
@@ -1487,7 +1497,7 @@ header .order:active {
 
 
 .logout {
-	padding-left: 30px;
+	padding-left: 32px;
 }
 
 .my-orders {
@@ -1497,11 +1507,13 @@ header .order:active {
 .my-profile a,
 .my-orders a,
 .dot {
+	display: block;
 	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
     font-weight: 400;
 	color: #32425c; 
+	margin-top: 0;
 }
 
 .dot {
